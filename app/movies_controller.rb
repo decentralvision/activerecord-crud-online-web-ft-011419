@@ -29,7 +29,9 @@ def can_be_created_in_a_block(args = {title:nil, release_date:nil, director:nil,
   # release_date == 1990
 
   Movie.create do |m|
-    binding.pry
+    args.each do |arg, value|
+      m[arg] = value
+    end
   end
 end
 
