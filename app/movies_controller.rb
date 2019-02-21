@@ -23,7 +23,7 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block(args = {title:nil, release_date:nil, director:nil, lead:nil, in_theaters:nil})
+def can_be_created_in_a_block(args = {title:"Home Alone", release_date:1990, director:nil, lead:nil, in_theaters:nil})
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
